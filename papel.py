@@ -12,21 +12,16 @@
 
 qtd_paredes = int(input("Informe a quantidade de paredes: "))
 paredes = []
-metragem = []
-i = 1
+i = 0
 # 2 - Cliente informa a metragem (altura x comprimento) de cada parede
-while i <= qtd_paredes:
-    print('Parede', i)
+while i < qtd_paredes:
+    print('Parede', i+1)
     altura = float(input('Altura: '))
     comprimento = float(input('Comprimento: '))
-    metragem.clear()
-    metragem.append(altura)
-    metragem.append(comprimento)
-    paredes.append(metragem[0])
-    paredes.append(metragem[1])
+    paredes.append(altura)
+    paredes.append(comprimento)
     i += 1
 
-print('Metragem: ',metragem)
 print('Paredes : ',paredes)
 
 
