@@ -1,10 +1,12 @@
 #
 # Programa para calcular a metragem de papel parede
 # Repositório: https://github.com/idukaweb/papelParede
-# By MWebRJ
+# By MWebRJ                            |  ver 0.0.2
 # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # 0 - Importar bibliotecas
+from math import ceil
+
 
 # 0 - Funções
 
@@ -13,7 +15,7 @@ def calc_area(parede):
     
     alt = 0
     lar = 0
-
+# 7 - Sistema calcula a quantidade de papel para cada parede
     for i in range(0,tam,2):
         alt += parede[i]
         lar += parede[i+1]
@@ -29,33 +31,31 @@ qtd_paredes = int(input("Informe a quantidade de paredes: "))
 paredes = []
 i = 0
 # 2 - Cliente informa a metragem (altura x comprimento) de cada parede
+
+# 5 - Vendedor insere os dados de cada parede no sistema
+
 while i < qtd_paredes:
     print('Parede', i+1)
     altura = float(input('Altura: '))
     comprimento = float(input('Comprimento: '))
+
+    # Lista com as metragens utilizadas é atualizada
     paredes.append(altura)
     paredes.append(comprimento)
     i += 1
 
 print('Paredes: ',paredes)
 
+# 8 - Sistema apresenta relatório com quantidade de papel usado e o valor a ser pago
 calc_area(paredes)
 
 
 # 3 - Vendedor informa os tipos de papéis disponíveis
 
-
 # 4 - Cliente escolhe o papel
-
-
-# 5 - Vendedor insere os dados de cada parede no sistema
-
 
 # 6 - Sistema identifica a altura e comprimento de cada tipo de papel usado
 
 
-# 7 - Sistema calcula a quantidade de papel para cada parede
 
-
-# 8 - Sistema apresenta relatório com quantidade de papel usado e o valor a ser pago
 
