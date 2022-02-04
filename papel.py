@@ -20,18 +20,21 @@ def calc_area(par):
     for i in range(0,tam,2):
         alt += par[i]
         lar += par[i+1]
-    print(f'Altura: {alt}m²\tLargura: {lar}m²')
+    
+    print('\nTotal da área a ser coberta:')
+    print(f'Altura: {alt:6.2f}m²\tLargura: {lar:6.2f}m²')
 
 # - Sistema calcula a área total a ser coberta
     area_total = alt * lar
-    print(f'Área total: {area_total:4.2f}m²')
+    print(f'Área total: {area_total:5.2f}m²')
 
 # - ---------------------------------------------------- HEADER
 # - Início da execução do programa
 # - Vendedor informa os tipos de papéis disponíveis
 lista_papeis = [[2.5, 0.5], [2.4, 0.75], [1.7, 0.5]]
 # - Sistema mostra a altura e comprimento de cada tipo de papel usado
-print(f'\n\nMetragem dos Papéis disponíveis')
+print(f'\n- Sistema de cálculo de papel de parede -')
+print(f'\nMetragem dos Papéis disponíveis')
 for i in lista_papeis:
     print(f'Tipo (alt|comp):{i}')
 
@@ -58,7 +61,7 @@ while i < qtd_paredes:
 
 
 # - Sistema mostra a metragem de cada parede
-print('Paredes: ',paredes)
+print('Metragem cadastrada com sucesso \n->>',paredes)
 
 # - Chamada da função de calcular a área a ser coberta
 
