@@ -10,8 +10,16 @@
 
 def calc_area(parede):
     tam = len(parede)
-    print(f'Recebi {tam/2:.0f} parede(s)')
+    
+    alt = 0
+    lar = 0
 
+    for i in range(0,tam,2):
+        alt += parede[i]
+        lar += parede[i+1]
+    print(f'Altura: {alt}m²\tLargura: {lar}m²')
+    area_total = alt * lar
+    print(f'Área total: {area_total:4.2f}m²')
 
 
 # 1 - Cliente informa a quantidade de paredes a serem cobertas
