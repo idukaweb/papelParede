@@ -37,13 +37,13 @@ for i in lista_papeis:
 
 # - Cliente escolhe o papel
 
-# 1 - Cliente informa a quantidade de paredes a serem cobertas
+# - Cliente informa a quantidade de paredes a serem cobertas
 
 qtd_paredes = int(input("Informe a quantidade de paredes: "))
 
 paredes = []
-# 2 - Cliente informa a metragem (altura x comprimento) de cada parede
-# 5 - Vendedor insere os dados de cada parede no sistema
+# - Cliente informa a metragem (altura x comprimento) de cada parede
+# - Vendedor insere os dados de cada parede no sistema
 
 i = 0
 while i < qtd_paredes:
@@ -64,7 +64,7 @@ print('Paredes: ',paredes)
 
 calc_area(paredes)
 
-# 8 - Sistema apresenta relatório com quantidade de papel usado e o valor a ser pago
+# - Sistema apresenta relatório com quantidade de papel usado e o valor a ser pago
 
 ''' Aqui podemos ter dois métodos: 
     Calcular a área total, colocar 10% a mais de margem, dividir pela largura do papel escolhido
