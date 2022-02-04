@@ -26,16 +26,16 @@ def calc_area(par):
     area_total = alt * lar
     print(f'Área total: {area_total:4.2f}m²')
 
-# - ----------------------------------------------------
+# - ---------------------------------------------------- HEADER
 # - Início da execução do programa
 # - Vendedor informa os tipos de papéis disponíveis
 lista_papeis = [[2.5, 0.5], [2.4, 0.75], [1.7, 0.5]]
-
+# - Sistema mostra a altura e comprimento de cada tipo de papel usado
 print(f'\n\nMetragem dos Papéis disponíveis')
 for i in lista_papeis:
-    print(f'Tipo (alt|larg):{i}')
+    print(f'Tipo (alt|comp):{i}')
 
-
+# - Cliente escolhe o papel
 
 # 1 - Cliente informa a quantidade de paredes a serem cobertas
 
@@ -44,6 +44,7 @@ qtd_paredes = int(input("Informe a quantidade de paredes: "))
 paredes = []
 # 2 - Cliente informa a metragem (altura x comprimento) de cada parede
 # 5 - Vendedor insere os dados de cada parede no sistema
+
 i = 0
 while i < qtd_paredes:
     print('Parede', i+1)
@@ -55,16 +56,17 @@ while i < qtd_paredes:
     paredes.append(comprimento)
     i += 1
 
+
+# - Sistema mostra a metragem de cada parede
 print('Paredes: ',paredes)
+
+# - Chamada da função de calcular a área a ser coberta
+
 calc_area(paredes)
 
-
 # 8 - Sistema apresenta relatório com quantidade de papel usado e o valor a ser pago
-# 6 - Sistema identifica a altura e comprimento de cada tipo de papel usado
 
-# 4 - Cliente escolhe o papel
-
-
-
-
-
+''' Aqui podemos ter dois métodos: 
+    Calcular a área total, colocar 10% a mais de margem, dividir pela largura do papel escolhido
+    Ou Calcular a área total e e dividir pela área do papel (acho que não dá certo o cálculo)
+'''
