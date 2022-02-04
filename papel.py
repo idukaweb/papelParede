@@ -6,6 +6,13 @@
 
 # 0 - Importar bibliotecas
 
+# 0 - Funções
+
+def calc_area(parede):
+    tam = len(parede)
+    print(f'Recebi {tam/2:.0f} parede(s)')
+
+
 
 # 1 - Cliente informa a quantidade de paredes a serem cobertas
 
@@ -22,7 +29,9 @@ while i < qtd_paredes:
     paredes.append(comprimento)
     i += 1
 
-print('Paredes : ',paredes)
+print('Paredes: ',paredes)
+
+calc_area(paredes)
 
 
 # 3 - Vendedor informa os tipos de papéis disponíveis
