@@ -29,8 +29,7 @@ def calc_area(par):
     area_total = alt * lar
     print(f'Área total: {area_total:5.2f}m²')
     resposta += f'\nÁrea total: {area_total:5.2f}m²'
-    tela.num_paredes['text'] = resposta
-
+    
 # - ---------------------------------------------------- HEADER
 # - Início da execução do programa
 # - Vendedor informa os tipos de papéis disponíveis
