@@ -29,7 +29,7 @@ def calc_area(par):
     area_total = alt * lar
     print(f'Área total: {area_total:5.2f}m²')
     resposta += f'\nÁrea total: {area_total:5.2f}m²'
-    
+
 # - ---------------------------------------------------- HEADER
 # - Início da execução do programa
 # - Vendedor informa os tipos de papéis disponíveis
@@ -76,4 +76,4 @@ print('Metragem cadastrada com sucesso \n>>',paredes)
     Ou Calcular a área total e e dividir pela área do papel (acho que não dá certo o cálculo)
 '''
 
-# criar versão com GUI
+# Próximo passo, criar versão com GUI
