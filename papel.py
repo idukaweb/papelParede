@@ -1,7 +1,7 @@
 # - ----------------------------------------------------
 # Programa para calcular a metragem de papel parede  - -
 # Link    : https://github.com/idukaweb/papelParede  - -
-# Author  : MWebRJ                  Version : 0.0.2  - -
+# Author  : iDuka Web RJ            Version : 0.0.2  - -
 # - ----------------------------------------------------
 
 # - Importação de bibliotecas
